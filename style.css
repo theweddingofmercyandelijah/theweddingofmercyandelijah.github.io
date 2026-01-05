@@ -18,7 +18,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: backgroundChange 20s infinite alternate;
+  animation: backgroundChange 10s infinite alternate;
   /* Your background and overlay */
   /* background: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
@@ -223,7 +223,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-  color: #a01c4f;
+  color: #ffffff;
 }
 
 #socials-container {
@@ -334,11 +334,11 @@ section {
   margin: 0 auto; 
 
   /* Semi-transparent background */
-  background-color: rgba(255, 255, 255, 0.15); /* white with 15% opacity */
+  background-color: rgba(255, 255, 255, 0.738); /* white with 15% opacity */
   backdrop-filter: blur(5px); /* optional: frosted glass effect */
 }
 .details-container p{
-  color: beige;
+  color: rgb(0, 0, 0);
 }
 
 /* Date container */
@@ -347,7 +347,7 @@ section {
 }
 
 .first-container p{
-  color: beige;
+  color: rgb(0, 0, 0);
 }
 
 .timebox{
@@ -358,7 +358,7 @@ section {
     flex-wrap: wrap;
 }
 .timebox p {
-  color: beige;
+  color: rgb(0, 0, 0);
 }
 
 .time{
