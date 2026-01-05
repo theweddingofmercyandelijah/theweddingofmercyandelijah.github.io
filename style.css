@@ -38,7 +38,7 @@ p {
 }
 
 h2,h3,h4 {
-  color: #a01c4f ;
+  color: #bd4402 ;
 }
 
 
@@ -213,6 +213,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  color: #ffffff;
 }
 
 .section__text__p2 {
@@ -525,7 +526,6 @@ article .icon {
 
 .gallery div img {
   width: 100%;
-  filter: grayscale(100%);
   transition: transform 0.3s;
   height: 100%;
   object-fit: cover; /* Keeps aspect ratio */
