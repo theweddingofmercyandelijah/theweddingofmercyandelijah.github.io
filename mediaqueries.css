@@ -109,6 +109,11 @@
   }
   .gallery span {
     height: 380px;
+    flex: 0 0 70%;
+    max-width: 70%;
+    border-radius: 12px;
+    overflow: hidden;
+    scroll-snap-align: start;
   }
   .time h2 {
     font-size: 1.5rem;
@@ -151,11 +156,27 @@
     -webkit-overflow-scrolling: touch;
     gap: 1rem;
     padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
   }
 
   /* Hide scrollbar */
   .gallery::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Images */
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+   /* Each slide (group container) */
+  .gallery > div {
+    display: flex;
+    gap: 1rem;
+    flex: 0 0 auto;
   }
 }
 
@@ -166,6 +187,11 @@
   }
    .gallery span {
     height: 350px;
+    flex: 0 0 70%;
+    max-width: 70%;
+    border-radius: 12px;
+    overflow: hidden;
+    scroll-snap-align: start;
   }
 
     /* Hide arrows on mobile */
@@ -188,12 +214,29 @@
     -webkit-overflow-scrolling: touch;
     gap: 1rem;
     padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
   }
 
   /* Hide scrollbar */
   .gallery::-webkit-scrollbar {
     display: none;
   }
+
+  /* Each slide (group container) */
+  .gallery > div {
+    display: flex;
+    gap: 1rem;
+    flex: 0 0 auto;
+  }
+
+  /* Images */
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
 
   .details-container {
     padding: 1rem;
