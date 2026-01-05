@@ -665,3 +665,30 @@ footer p {
   cursor: pointer;
 }
 
+
+#audio-control {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#audio-control img {
+  width: 26px;
+  height: 26px;
+  display: none;
+}
+
+#audio-control img.active {
+  display: block;
+}
+

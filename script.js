@@ -74,3 +74,29 @@ nextBtn.addEventListener("click", () => {
 backBtn.addEventListener("click", () => {
   gallery.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 });
+
+const audio = document.getElementById("bg-music");
+  const playIcon = document.getElementById("playIcon");
+  const pauseIcon = document.getElementById("pauseIcon");
+
+  // Attempt autoplay on page load
+  window.addEventListener("load", () => {
+    audio.play().then(() => {
+      pauseIcon.classList.add("active");
+    }).catch(() => {
+      playIcon.classList.add("active");
+    });
+  });
+
+  // Toggle play / pause
+  document.getElementById("audio-control").addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      playIcon.classList.remove("active");
+      pauseIcon.classList.add("active");
+    } else {
+      audio.pause();
+      pauseIcon.classList.remove("active");
+      playIcon.classList.add("active");
+    }
+  });
