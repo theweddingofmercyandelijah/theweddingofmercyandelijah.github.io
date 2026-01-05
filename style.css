@@ -299,6 +299,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  justify-content: space-between;
 }
 
 .about-details-container {
@@ -340,6 +341,11 @@ section {
 }
 .details-container p{
   color: rgb(0, 0, 0);
+}
+
+.text-container {
+  margin-top: 2rem;
+  max-width: 600px;
 }
 
 /* Date container */
