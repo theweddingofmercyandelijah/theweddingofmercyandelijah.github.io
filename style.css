@@ -567,6 +567,15 @@ article .icon {
   transform: scale(1.1);
 }
 
+.gallery span img {
+  transition: transform 0.3s ease;
+}
+
+.gallery span img:active {
+  transform: scale(0.97);
+}
+
+
 /* CONTACT */
 
 #contact {
